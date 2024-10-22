@@ -28,13 +28,13 @@ kdqueueid = kdqueue['pattern_id'].values
 kdqueuenotes = meep.patternid_search(kdqueueid)[['notes']]
 
 #converting strings to datetime objects, plotting histogram of dates --> shows how many patterns i favorited every months
-kdfaves['datetime'] = pd.to_datetime(kdfaves['created_at'], errors='coerce', utc = True)
-kdfaves['datetime']
-kdfaves['date'] = kdfaves['datetime'].dt.date
-kdfaves['month'] = kdfaves['datetime'].dt.month
-plt.hist(kdfaves['date'])
-plt.xlabel('Date')
-plt.ylabel('Counts')
-plt.title('Counts of patterns favorited over time')
-plt.xticks(rotation = 270)
-plt.show()
+# kdfaves['datetime'] = pd.to_datetime(kdfaves['created_at'], errors='coerce', utc = True)
+# kdfaves['datetime']
+# kdfaves['date'] = kdfaves['datetime'].dt.date
+# kdfaves['month'] = kdfaves['datetime'].dt.month
+# plt.hist(kdfaves['date'])
+# plt.xlabel('Date')
+# plt.ylabel('Counts')
+# plt.title('Counts of patterns favorited over time')
+# plt.xticks(rotation = 270)
+# plt.show()
